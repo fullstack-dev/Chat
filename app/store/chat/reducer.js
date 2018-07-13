@@ -1,5 +1,5 @@
 import * as types from './actionTypes'
- 
+
 const initialState = {
   sending: false,
   sendingError: null,
@@ -7,7 +7,7 @@ const initialState = {
   messages: {},
   loadMessagesError: null
 }
- 
+
 const chat = (state = initialState, action) => {
   switch(action.type) {
     case types.CHAT_MESSAGE_LOADING:
@@ -26,5 +26,5 @@ const chat = (state = initialState, action) => {
       return state
   }
 }
- 
+
 export default chat

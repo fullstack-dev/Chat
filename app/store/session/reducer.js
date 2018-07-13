@@ -1,12 +1,12 @@
 import * as types from './actionTypes'
- 
+
 const initialState = {
   restoring: false,
   loading: false,
   user: null,
   error: null
 }
- 
+
 const session = (state = initialState, action) => {
   switch(action.type) {
     case types.SESSION_RESTORING:
@@ -23,5 +23,5 @@ const session = (state = initialState, action) => {
       return state
   }
 }
- 
+
 export default session

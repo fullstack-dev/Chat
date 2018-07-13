@@ -1,8 +1,8 @@
 import { TabNavigator } from 'react-navigation'
- 
+
 import LoginForm from './LoginForm'
 import SignUpForm from './SignUpForm'
- 
+
 const routeConfigs = {
   Login: {
     screen: LoginForm,
@@ -11,7 +11,7 @@ const routeConfigs = {
     screen: SignUpForm,
   },
 }
- 
+
 const tabBarOptions = {
   tabBarOptions: {
     activeTintColor: '#88cc88',
@@ -27,5 +27,5 @@ const tabBarOptions = {
   },
   tabBarPosition: 'bottom'
 }
- 
+
 export default TabNavigator(routeConfigs, tabBarOptions)
